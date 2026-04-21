@@ -13,8 +13,8 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
-        if ("admin".equals(request.getUsername()) && "1234".equals(request.getPassword())) {
-            return ResponseEntity.ok(new LoginResponse("login successful!", "demo-token-123"));
+        if ("admin".equals(request.getUsername()) && "gen12.29".equals(request.getPassword())) {
+            return ResponseEntity.ok(new LoginResponse("login successful", "jdbJHVuughbHBGOYGUVkjhluhuyFUJHBJHJLHGKUYfyujhhguYFUHhbjhguygH"));
         }
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                 .body(new LoginResponse("invalid username or password", null));
@@ -22,11 +22,11 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterRequest request) {
-        return ResponseEntity.ok().body(new LoginResponse("registration successful!", null));
+        return ResponseEntity.ok().body(new LoginResponse("registration successful", null));
     }
 
     @PostMapping("/reset-password")
     public ResponseEntity<?> resetPassword(@RequestBody ResetPasswordRequest request) {
-        return ResponseEntity.ok().body(new LoginResponse("password reset successful!", null));
+        return ResponseEntity.ok().body(new LoginResponse("password reset successful", null));
     }
 }
