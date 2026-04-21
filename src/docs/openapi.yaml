@@ -39,7 +39,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: Login successful
+                    example: login successful
                   token:
                     type: string
                     example: sfgkjbHGOUYvjHLKjhnlvHBNkjnhljugkuvJGVuftfgsfgkjbHGOUYvjHLKjhnlvHBNkjnhljugkuvJGVuftfgsfgkjbHGOUYvjHLKjhnlvHBNkjnhljugkuvJGVuftfg
