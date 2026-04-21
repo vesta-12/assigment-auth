@@ -25,10 +25,10 @@ paths:
               properties:
                 username:
                   type: string
-                  example: testuser
+                  example: sofiya12
                 password:
                   type: string
-                  example: password123
+                  example: gen1221
       responses:
         '200':
           description: Successful login
@@ -42,7 +42,7 @@ paths:
                     example: Login successful
                   token:
                     type: string
-                    example: jwt-token-123456
+                    example: sfgkjbHGOUYvjHLKjhnlvHBNkjnhljugkuvJGVuftfgsfgkjbHGOUYvjHLKjhnlvHBNkjnhljugkuvJGVuftfgsfgkjbHGOUYvjHLKjhnlvHBNkjnhljugkuvJGVuftfg
         '401':
           description: Invalid credentials
           content:
@@ -52,7 +52,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: Invalid username or password
+                    example: incorrect username or password
 
   /register:
     post:
@@ -71,14 +71,14 @@ paths:
               properties:
                 username:
                   type: string
-                  example: newuser
+                  example: darya33
                 email:
                   type: string
                   format: email
-                  example: newuser@example.com
+                  example: darya.ivaikina@gmail.com
                 password:
                   type: string
-                  example: password123
+                  example: linear.reg.33!
       responses:
         '200':
           description: Registration successful
@@ -89,9 +89,9 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: Registration successful
+                    example: registration successful
         '400':
-          description: Invalid input or user already exists
+          description: incorrect input or user already exists
           content:
             application/json:
               schema:
@@ -99,7 +99,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: Username already exists
+                    example: this user already exists
 
   /reset-password:
     post:
@@ -118,10 +118,10 @@ paths:
                 email:
                   type: string
                   format: email
-                  example: testuser@example.com
+                  example: yevgenii.205@gmail.com
                 newPassword:
                   type: string
-                  example: newPassword123
+                  example: java5!
       responses:
         '200':
           description: Password reset successful
@@ -132,7 +132,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: Password reset successful
+                    example: password reset successful
         '404':
           description: User not found
           content:
@@ -142,4 +142,4 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: User not found
+                    example: user not found
